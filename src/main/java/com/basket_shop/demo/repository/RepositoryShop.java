@@ -1,12 +1,11 @@
 package com.basket_shop.demo.repository;
 
-import org.springframework.context.annotation.Scope;
-import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.*;
 
-@Scope(value = "session",proxyMode = ScopedProxyMode.TARGET_CLASS)
+@SessionScope
 @Component
 public class RepositoryShop {
     private final List<Integer> BAG = new ArrayList<>();

@@ -1,7 +1,6 @@
 package com.basket_shop.demo.cotroller;
 
 import com.basket_shop.demo.service.api.ShopService;
-import org.springframework.context.annotation.Scope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 @RestController
-@RequestMapping("/store/order")
+@RequestMapping("/order")
 public class ShopController {
     private final ShopService shopService;
 
